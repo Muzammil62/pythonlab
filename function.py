@@ -1,5 +1,6 @@
-def add_numbers(a, b):
-    return a + b
+def outer_function():
+    def inner_function():
+        return "This is the inner function."
+    return f"This is the outer function. {inner_function()}"
 
-result = add_numbers(3, 5)
-print("The sum is:", result)
+print(outer_function())
